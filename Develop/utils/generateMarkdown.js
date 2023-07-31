@@ -2,17 +2,15 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let licenseBadge = "";
-
-  if (!license) {
-    licenseBadge=`[License Badge] (https://shields.io/badge/License-${license}-purple`
-  }
-  return licenseBadge;
+  
+  licenseBadge =`[License Badge] (https://shields.io/badge/License-${license}-purple`
+  ;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseLink = "";
+  let licenseLink;
 
   switch(license) {
     case "MIT":
@@ -21,30 +19,29 @@ function renderLicenseLink(license) {
     case "Apache":
       licenseLink = "https://www.apache.org/licenses/LICENSE-2.0";
       break;
-    case "GNU-LGPL":
-      licenseLink = "https://www.gnu.org/licenses/lgpl-3.0-standalone.html";
-      break;
     case "GNU-GPL":
       licenseLink = "https://www.gnu.org/licenses/gpl-3.0-standalone.html";
       break;
-    default:
-      licenseLink;
+    case "N/A":
+      licenseLink = "https://choosealicense.com/";
       break;
-
+    default:
+      licenseLink = "";
+      break;
   }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let licenseSection = "";
+  let licenseSection;
 
   if (!license) {
     licenseSection = 
-    `## License\n For more info about this License go to ${renderLicenseLink(license)}`
+    `For more info about this License go to ${renderLicenseLink(license)}`
   }
 
-  return licenseSection
+  return licenseSection = ""
 
 }
 
