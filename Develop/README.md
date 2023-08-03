@@ -1,22 +1,22 @@
-# sdf
+# WriteYou-ReadMe
  
-  [License Badge] https://shields.io/badge/License-Apache-purple
+  [![License Badge](https://img.shields.io/badge/License-Apache-purple)](https://www.apache.org/licenses/LICENSE-2.0)
  
   ## Description
 
-  sdfs
+  To generate a base README to be filled with more specific details to better describe the user's applicationication
 
   ## Installation
 
-  dsf
+  
 
   ## Usage
 
-  sdf
+  By cloning the code to your coding software of choice and running a node index.js in the terminal
 
   ## Credits
 
-  sdf
+  Joshua Nichols
 
   ## License
 
@@ -26,6 +26,6 @@
 
   You can contact me through:
 
-  Email: sdf
+  Email: [jnichols221b@gmail.com](mailto:jnichols221b@gmail.com)
 
-  GitHub: [PROFILE](https://github.com/sdf)
+  GitHub: [PROFILE](https://github.com/JoshON5)

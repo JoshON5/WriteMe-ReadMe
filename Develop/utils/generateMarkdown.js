@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   let licenseBadge = "";
   
-  licenseBadge =`[License Badge] https://shields.io/badge/License-${license}-purple`
+  licenseBadge =`[![License Badge](https://img.shields.io/badge/License-${license}-purple)](${renderLicenseLink(license)})`
   ;
   return licenseBadge;
 }
@@ -65,7 +65,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}\n
   ## ${markdownSections[5]}\n
   You can contact me through:\n
-  Email: ${data.email}\n
+  Email: [${data.email}](mailto:${data.email})\n
   GitHub: [PROFILE](https://github.com/${data.username})
 `;
 }
