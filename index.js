@@ -2,7 +2,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
 const markdowns = require('./Develop/utils/generateMarkdown')
-const licenses = ["N/A", "MIT", "Apache", "GNU-GPL"]
+const license = ["N/A", "MIT", "Apache", "GNU-GPL"]
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([      
@@ -34,7 +34,7 @@ message: 'List any authors that contributed to the application:',
 type: 'list',
 name: 'license',
 message: 'Choose the license you used for the application:',
-choices: licenses
+choices: license
 },
 {
 type: 'input',
@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-    .then (answers => writeToFile("README.md", markdowns(answers)))
+    .then (answers => writeToFile("./Develop/README.md", markdowns(answers)))
 };
 
 // Function call to initialize app

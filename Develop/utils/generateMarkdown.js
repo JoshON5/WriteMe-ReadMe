@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseLink;
+  let licenseLink = "";
 
   switch(license) {
     case "MIT":
@@ -34,14 +34,14 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let licenseSection;
+  let licenseSection = "";
 
-  if (!license) {
+  if (license) {
     licenseSection = 
     `For more info about this License go to ${renderLicenseLink(license)}`
   }
 
-  return licenseSection = ""
+  return licenseSection = "";
 
 }
 
