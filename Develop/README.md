@@ -1,18 +1,18 @@
-# WriteYou-ReadMe
+# WriteYou-ReadME
  
   [![License Badge](https://img.shields.io/badge/License-Apache-purple)](https://www.apache.org/licenses/LICENSE-2.0)
  
   ## Description
 
-  To generate a base README to be filled with more specific details to better describe the user's applicationication
+  To generate a README.md file with a layout with inserted Data from answers from an inquirer prompt of questions.
 
   ## Installation
 
-  
+  the application needs the installation of nodejs and also run a npm i inquirer@8.2.4 to run the prompt of questions.
 
   ## Usage
 
-  By cloning the code to your coding software of choice and running a node index.js in the terminal
+  by importing the code into your software of your choice and running the program in the terminal
 
   ## Credits
 

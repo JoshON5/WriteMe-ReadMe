@@ -6,6 +6,9 @@
 
   To generate a base README to be filled with more specific details to better describe the user's applicationication
 
+  ## Visuals
+  <img src="./Assets/2023-08-03 14.07.34.gif"></img>
+
   ## Installation
   Nodejs is required to run the inquirer prompts to generate the README.md. To install node got to (https://nodejs.org/en) and once installed you must input 
 
