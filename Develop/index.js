@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
-const markdowns = require('./Develop/utils/generateMarkdown')
+const markdowns = require('./utils/generateMarkdown')
 const license = ["N/A", "MIT", "Apache", "GNU-GPL"]
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-    .then (answers => writeToFile("./Develop/README.md", markdowns(answers)))
+    .then (answers => writeToFile("./README.md", markdowns(answers)))
 };
 
 // Function call to initialize app

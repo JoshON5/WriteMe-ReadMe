@@ -3,8 +3,9 @@
 function renderLicenseBadge(license) {
   let licenseBadge = "";
   
-  licenseBadge =`[License Badge] (https://shields.io/badge/License-${license}-purple`
+  licenseBadge =`[License Badge] https://shields.io/badge/License-${license}-purple`
   ;
+  return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
@@ -29,6 +30,8 @@ function renderLicenseLink(license) {
       licenseLink = "";
       break;
   }
+
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -41,7 +44,7 @@ function renderLicenseSection(license) {
     `For more info about this License go to ${renderLicenseLink(license)}`
   }
 
-  return licenseSection = "";
+  return licenseSection ;
 
 }
 
